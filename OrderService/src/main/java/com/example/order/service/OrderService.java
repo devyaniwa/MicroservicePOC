@@ -27,7 +27,7 @@ public class OrderService {
     public Order createOrder(Order order) {
         order =orderCRUD.save(order);
         order.setStatus("CREATED");
-        
+        // after saving order lets release msg to consumer
         String message= null;
         try {
             message = om.writeValueAsString(order);
