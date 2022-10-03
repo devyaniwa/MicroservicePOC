@@ -15,7 +15,7 @@ kafka-server: .\bin\windows\kafka-server-start.bat .\config\server.properties
 Method: Post; URL: http://localhost:9093/user/save;
   Sample JSON: 
  {
- "id":null,
+ "id":"",
  "name":"Devyani",
  "balance":300
  }
@@ -25,7 +25,7 @@ Method: Post; URL: http://localhost:9093/user/save;
 Method: Post; URL: http://localhost:9093/order/create;
  Sample JSON:
  {
- "id":null,
+ "id":"",
  "orderAmount":10,
  "status":"CREATED",
  "userId":1
